@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our School - Registration &amp; Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <input type="checkbox" id="menu-toggle" class="menu-check">
+    <a href="index.html" class="logo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><path d="M3 9l9-6 9 6M5 9v9M9 9v9M15 9v9M19 9v9M3 21h18M3 18h18"/></svg>
+      Our School
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="activities.html">Activities</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+    <div class="nav-tools">
+      <label for="menu-toggle" class="icon-btn menu-btn" aria-label="Menu">&#9776;</label>
+    </div>
+  </div>
+</nav>
+
+<div class="banner" style="background:#fff;color:var(--navy);padding:22px 20px 6px">
+  <h1>&#128197; Registration &amp; Booking</h1>
+  <p style="color:var(--muted)">Fill in the details below to register or book your place</p>
+</div>
+
+<main class="container" style="padding-top:16px">
+  <div class="form-card">
+    <form action="thanks.html" method="get">
+      <div class="form-cols">
+        <div>
+          <h3>Personal Information</h3>
+          <div class="field">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="3">
+          </div>
+          <div class="field">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="field">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required pattern="[0-9+\- ]{8,15}" title="Digits only, 8 to 15 characters">
+          </div>
+        </div>
+
+        <div>
+          <h3>Booking Details</h3>
+          <div class="field">
+            <label for="course">Course / Activity</label>
+            <select id="course" name="course" required>
+              <option value="">Select a course or activity</option>
+              <option>Football Club</option>
+              <option>Art Workshop</option>
+              <option>Science Lab</option>
+              <option>Robotics</option>
+              <option>Music Band</option>
+              <option>Debate Club</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" required>
+          </div>
+          <div class="field">
+            <label for="message">Message (Optional)</label>
+            <textarea id="message" name="message" placeholder="Type your message"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <button type="submit" class="btn-block">Submit</button>
+    </form>
+  </div>
+</main>
+
+<footer>&copy; 2026 Our School. All rights reserved.</footer>
+</body>
+</html>
